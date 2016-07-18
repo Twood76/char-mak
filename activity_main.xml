@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.xross.charactercreator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:id="@+id/statsText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:id="@+id/typeText"
+        android:layout_below="@+id/statsText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Race"
+        android:id="@+id/raceText"
+        android:layout_below="@+id/typeText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Main TextView"
+        android:id="@+id/userRead"
+        android:layout_below="@+id/raceText"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Level"
+        android:id="@+id/levelS"
+        android:layout_above="@+id/numberPicker"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        android:id="@+id/humanButton"
+        android:layout_alignTop="@+id/numberPicker"
+        android:layout_alignStart="@+id/userRead" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elf"
+        android:id="@+id/elfButton"
+        android:layout_below="@+id/humanButton"
+        android:layout_alignStart="@+id/humanButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dwarf"
+        android:id="@+id/dwarfButton"
+        android:layout_below="@+id/elfButton"
+        android:layout_alignStart="@+id/elfButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fighter"
+        android:id="@+id/fighterButton"
+        android:layout_above="@+id/elfButton"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wizard"
+        android:id="@+id/wizardButton"
+        android:layout_above="@+id/dwarfButton"
+        android:layout_alignEnd="@+id/fighterButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rogue"
+        android:id="@+id/rogueButton"
+        android:layout_below="@+id/wizardButton"
+        android:layout_alignStart="@+id/wizardButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Race"
+        android:id="@+id/raceView"
+        android:layout_above="@+id/humanButton"
+        android:layout_alignStart="@+id/humanButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Class"
+        android:id="@+id/classButton"
+        android:layout_above="@+id/fighterButton"
+        android:layout_alignStart="@+id/fighterButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MakeMyCharacter"
+        android:id="@+id/continueButton"
+        android:layout_below="@+id/numberPicker"
+        android:layout_toEndOf="@+id/elfButton"
+        android:layout_marginTop="49dp" />
+
+</RelativeLayout>
